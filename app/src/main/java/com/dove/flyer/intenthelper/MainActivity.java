@@ -21,6 +21,10 @@ public class MainActivity extends Activity {
                 .putFloat("key",0.1f)
                 .putDouble("key",0.1d)
                 .buildIntent();
+        Bundle bundle = new IntentBuilder()
+                .putString("key","")
+                .buildBundle();
+
         IntentHelper intentHelper = new IntentBuilder()
                 .putString("key","")
                 .putInt("key",0)
