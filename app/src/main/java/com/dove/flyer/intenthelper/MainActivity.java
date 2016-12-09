@@ -32,6 +32,8 @@ public class MainActivity extends Activity {
                 .putDouble("key",0.1d)
                 .buildHelper();
         intentHelper.startActivity(this);
+        intentHelper.startActivityForResult(this,1);
+        intentHelper.sendBroadCast(this);
 
         String value = new IntentParser(getIntent()).getBundle().getString("key");
     }

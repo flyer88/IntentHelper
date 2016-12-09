@@ -1,3 +1,9 @@
+### IntentHelper
+
+一个 `Intent` 的帮助类 ，用来链式的使用 `intent` 的构造，`bundle` 的构造。
+
+
+
 ### Usage
 
 #### Build Intent
@@ -28,6 +34,15 @@ IntentHelper intentHelper = new IntentBuilder()
                 .putString("key","")
                 .putDouble("key",0.1d)
                 .buildHelper();
+```
+
+
+
+#### use IntentHelper
+
+```java
+intentHelper.startActivityForResult(this,1);
+intentHelper.sendBroadCast(this);
 ```
 
 

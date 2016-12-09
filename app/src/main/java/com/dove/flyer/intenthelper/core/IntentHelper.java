@@ -26,7 +26,7 @@ public class IntentHelper {
         activity.startActivity(mIntent);
     }
 
-    public void startActivity(Activity activity, int code){
+    public void startActivityForResult(Activity activity, int code){
         activity.startActivityForResult(mIntent,code);
     }
 
